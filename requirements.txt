@@ -1,0 +1,13 @@
+# Extraction pipeline (stage 1)
+pymupdf>=1.24        # render PDF pages to images
+pytesseract>=0.3.10  # Python wrapper for Tesseract OCR
+pillow>=10.0
+pydantic>=2.6        # schema validation for LLM output
+
+# Scraper (stage 1)
+playwright>=1.45
+
+kuzu>=0.11          # embedded Cypher graph DB, used by tests/graph_feasibility.py
+
+# Later stages (graph, RAG, API) are added as they are built:
+# neo4j, neo4j-graphrag, ollama, fastapi, uvicorn, chromadb
